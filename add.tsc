@@ -1,4 +1,22 @@
-var x = 4;
-var y = -x;
-console.log("value of x: ", x);   //outputs 4
-console.log("value of y: ", y); 
+
+function primitive(f)
+{
+	if(typeof f == "number" || typeof f == "bigint" || typeof f == "boolean"  || typeof f == "bigint" || typeof f == "string" )
+	{
+		if(typeof f == "string")
+		{
+			if(f.length==1)
+			{
+				console.log("this ",f," is consider as premitive data value");  
+			}
+			else{
+				console.log("this ",f," is not consider as premitive data value");  
+			}
+		}
+		else{
+			console.log("this ",f," is consider as premitive data value");
+		}
+	}
+}
+var x = 7;
+primitive(x)
